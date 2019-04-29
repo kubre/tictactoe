@@ -16,8 +16,19 @@ _global_script_class_icons={
 [application]
 
 config/name="TicTacToe"
+run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=640
+window/size/height=300
+window/size/test_width=640
+window/size/test_height=300
+window/dpi/allow_hidpi=true
+window/stretch/aspect="expand"
 
 [rendering]
 
+environment/default_clear_color=Color( 0.164706, 0.164706, 0.164706, 1 )
 environment/default_environment="res://default_env.tres"
