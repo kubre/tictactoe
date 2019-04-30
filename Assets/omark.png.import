@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Markers.png-98479a3f760d6b2d427229ab4f3c1aa3.stex"
+path="res://.import/omark.png-46be7a818ea02e9f2075ac68ee270aa5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Markers.png"
-dest_files=[ "res://.import/Markers.png-98479a3f760d6b2d427229ab4f3c1aa3.stex" ]
+source_file="res://Assets/omark.png"
+dest_files=[ "res://.import/omark.png-46be7a818ea02e9f2075ac68ee270aa5.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

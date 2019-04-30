@@ -52,7 +52,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 1
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 margin_left = 261.234
@@ -64,7 +63,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 2
 
 [node name="TextureButton3" type="TextureButton" parent="."]
 margin_left = 371.468
@@ -76,7 +74,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 3
 
 [node name="TextureButton4" type="TextureButton" parent="."]
 margin_left = 152.081
@@ -88,7 +85,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 4
 
 [node name="TextureButton5" type="TextureButton" parent="."]
 margin_left = 260.153
@@ -100,7 +96,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 5
 
 [node name="TextureButton6" type="TextureButton" parent="."]
 margin_left = 369.306
@@ -112,7 +107,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 6
 
 [node name="TextureButton7" type="TextureButton" parent="."]
 margin_left = 155.323
@@ -124,7 +118,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 6
 
 [node name="TextureButton8" type="TextureButton" parent="."]
 margin_left = 262.314
@@ -136,7 +129,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 8
 
 [node name="TextureButton9" type="TextureButton" parent="."]
 margin_left = 372.548
@@ -148,5 +140,3 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-number = 9
-

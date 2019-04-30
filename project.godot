@@ -28,7 +28,12 @@ window/size/test_height=300
 window/dpi/allow_hidpi=true
 window/stretch/aspect="expand"
 
+[locale]
+
+locale_filter=[ 0, [  ] ]
+
 [rendering]
 
+quality/driver/fallback_to_gles2=true
 environment/default_clear_color=Color( 0.164706, 0.164706, 0.164706, 1 )
 environment/default_environment="res://default_env.tres"
