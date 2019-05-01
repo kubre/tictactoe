@@ -1,6 +1,6 @@
-# Game
+# Player vs Player Mode
 extends Node
-class_name Game
+class_name PVP
 
 # This array represents board
 onready var board = [
@@ -25,13 +25,13 @@ func _ready() -> void:
 
 func on_position_marked(btn: TTTButton) -> void:
     # Handles entire round from marking place to checking win condition
-    place_mark(btn, active_player)
+    if not place_mark(btn, active_player):
+        return
 
     # Increase Round
     current_round += 1
 
     # If all places are marked then declare draw and reset the game
-
     if(check_win(active_player)):
         var winner = ""
         if active_player == X:
@@ -49,9 +49,12 @@ func on_position_marked(btn: TTTButton) -> void:
     # Switch active player
     active_player = O if active_player == X else X
 
-func place_mark(btn: TTTButton, player: int) -> void:
+func place_mark(btn: TTTButton, player: int) -> bool:
     # Actullay places marks board
+    if btn.value != 0:
+        return false
     btn.set_x(X) if player == X else btn.set_o(O)
+    return true
 
 func reset() -> void:
     # Resets the Game
@@ -91,3 +94,8 @@ func msgbox(title: String, message: String, ok_method: String) -> void:
     $Dialog.dialog_text = message
     $Dialog.connect("confirmed", self, ok_method)
     $Dialog.popup_centered_minsize()
+
+
+func _on_MenuButton_pressed() -> void:
+    # Exit to Main Menu
+    get_tree().change_scene("res://MainMenu.tscn")

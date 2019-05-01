@@ -9,10 +9,15 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node",
-"class": "Game",
+"base": "Node2D",
+"class": "MainMenu",
 "language": "GDScript",
-"path": "res://World.gd"
+"path": "res://MainMenu.gd"
+}, {
+"base": "Node",
+"class": "PVP",
+"language": "GDScript",
+"path": "res://PVP.gd"
 }, {
 "base": "TextureButton",
 "class": "TTTButton",
@@ -20,14 +25,15 @@ _global_script_classes=[ {
 "path": "res://TTTButton.gd"
 } ]
 _global_script_class_icons={
-"Game": "",
+"MainMenu": "",
+"PVP": "",
 "TTTButton": ""
 }
 
 [application]
 
 config/name="Tic Tac Toe"
-run/main_scene="res://World.tscn"
+run/main_scene="res://MainMenu.tscn"
 config/icon="res://icon.png"
 
 [debug]

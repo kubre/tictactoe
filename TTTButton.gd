@@ -6,7 +6,7 @@ const xmark : = preload("res://Assets/xmark.png")
 const omark : = preload("res://Assets/omark.png")
 
 # Value representing player mark
-var value: int
+var value: = 0
 
 # Buttons positions
 export (int) var row : = -1

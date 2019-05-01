@@ -8,9 +8,8 @@ Entire Tic Tac Toe game example in godot 3.1 or up game engine.
  
 - [x] Player vs Player
 - [ ] Player vs Ai
-- [ ] Player vs Player (in Local Network)
-- [ ] Score counting system
-- [ ] Start Screen
+- [x] Score counting system
+- [x] Start Screen
 
 <hr>
 
@@ -18,5 +17,5 @@ Feel free to copy or redistribute as you wish no credit required. (entirely opti
 
 <hr>
 
-Find out my learning while coding this game experience on my youtube channel : Vaibhav Kubre
+Find out more about my learning experience while coding this game  on my youtube channel : Vaibhav Kubre
 
