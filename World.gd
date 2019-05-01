@@ -3,7 +3,7 @@ extends Node
 class_name Game
 
 # This array represents board
-onready var board = [ 
+onready var board = [
                 [ $TTTButton1, $TTTButton2, $TTTButton3],
                 [ $TTTButton4, $TTTButton5, $TTTButton6],
                 [ $TTTButton7, $TTTButton8, $TTTButton9]
@@ -22,24 +22,32 @@ func _ready() -> void:
     for row in board:
         for btn in row:
             btn.connect("im_pressed", self, "on_position_marked")
-  
+
 func on_position_marked(btn: TTTButton) -> void:
     # Handles entire round from marking place to checking win condition
     place_mark(btn, active_player)
 
     # Increase Round
     current_round += 1
-    
-    # If all places are marked then declare draw and reset the game 
-        
+
+    # If all places are marked then declare draw and reset the game
+
     if(check_win(active_player)):
-        msgbox("Win", "Player %s won the match" % ("X" if active_player == X else "O"), "reset")
+        var winner = ""
+        if active_player == X:
+            winner = "X"
+            $XScore.text = String(int($XScore.text) + 1)
+        else:
+            winner = "O"
+            $OScore.text = String(int($OScore.text) + 1)
+
+        msgbox("Win", "Player %s won the match" % winner, "reset")
     if current_round == 9:
         msgbox("Draw", "Draw game! both played well, Click ok to reset game", "reset")
-    
+
     # Switch active player
     active_player = O if active_player == X else X
-    
+
 func place_mark(btn: TTTButton, player: int) -> void:
     # Actullay places marks board
     btn.set_x(X) if player == X else btn.set_o(O)
@@ -54,7 +62,7 @@ func reset() -> void:
 
 func check_win(player: int) -> bool:
     var win_no = player*3
-    var sums = [sum_col(0), sum_col(1), sum_col(2), 
+    var sums = [sum_col(0), sum_col(1), sum_col(2),
                 sum_row(0), sum_row(1), sum_row(2),
                 sum_diag_1(), sum_diag_2()]
 

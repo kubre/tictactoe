@@ -115,3 +115,30 @@ col = 2
 margin_right = 175.0
 margin_bottom = 107.0
 window_title = "Tic Tac Toe"
+
+[node name="Score" type="Label" parent="."]
+margin_left = 5.97079
+margin_top = 4.64394
+margin_right = 92.9708
+margin_bottom = 52.6439
+text = "Score
+X  :
+O :"
+uppercase = true
+
+[node name="XScore" type="Label" parent="."]
+margin_left = 30.0
+margin_top = 23.0
+margin_right = 73.0
+margin_bottom = 37.0
+text = "0"
+uppercase = true
+
+[node name="OScore" type="Label" parent="."]
+margin_left = 30.0
+margin_top = 40.0
+margin_right = 72.0
+margin_bottom = 54.0
+text = "0"
+uppercase = true
+
