@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "Game",
+"language": "GDScript",
+"path": "res://World.gd"
+}, {
 "base": "TextureButton",
 "class": "TTTButton",
 "language": "GDScript",
 "path": "res://TTTButton.gd"
 } ]
 _global_script_class_icons={
+"Game": "",
 "TTTButton": ""
 }
 

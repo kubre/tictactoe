@@ -2,23 +2,28 @@
 extends TextureButton
 class_name TTTButton
 
-const xmark = preload("res://Assets/xmark.png")
-const omark = preload("res://Assets/omark.png")
+const xmark : = preload("res://Assets/xmark.png")
+const omark : = preload("res://Assets/omark.png")
 
+# Value representing player mark
 var value: int
-export (int) var row = -1
-export (int) var col = -1
+
+# Buttons positions
+export (int) var row : = -1
+export (int) var col : = -1
 
 signal im_pressed(button)
 
 func _ready() -> void:
     reset()
 
-func set_x(val = 1) -> void:
+# Mark me X
+func set_x(val : = 1) -> void:
     value = val
     texture_normal = xmark
 
-func set_o(val = 10) -> void:
+# Mark me O
+func set_o(val : = 10) -> void:
     value = val
     texture_normal = omark
 
