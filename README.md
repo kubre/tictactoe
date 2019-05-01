@@ -3,7 +3,7 @@
 ## About
 
 Entire Tic Tac Toe game example in godot 3.1 or up.
-All the Assests in .xcf(GIMP format) and .png format are provided inside assets directory.
+All the assets in .xcf(GIMP format) and .png format are provided inside assets directory.
 
 #### Main Menu Screen
 ![Main Menu](images/Menu.png)

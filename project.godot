@@ -61,6 +61,5 @@ locale_filter=[ 0, [  ] ]
 
 [rendering]
 
-quality/driver/fallback_to_gles2=true
 environment/default_clear_color=Color( 0.0705882, 0.0705882, 0.0705882, 1 )
 environment/default_environment="res://default_env.tres"
