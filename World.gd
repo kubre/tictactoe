@@ -40,8 +40,9 @@ func on_position_marked(btn: TTTButton) -> void:
         else:
             winner = "O"
             $OScore.text = String(int($OScore.text) + 1)
-
         msgbox("Win", "Player %s won the match" % winner, "reset")
+        return
+
     if current_round == 9:
         msgbox("Draw", "Draw game! both played well, Click ok to reset game", "reset")
 
