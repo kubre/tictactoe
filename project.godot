@@ -34,7 +34,8 @@ _global_script_class_icons={
 
 config/name="Tic Tac Toe"
 run/main_scene="res://MainMenu.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://Assets/MainMenu.png"
+config/icon="res://Assets/Logo.png"
 
 [debug]
 

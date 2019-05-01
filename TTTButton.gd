@@ -1,4 +1,4 @@
-# TTTButton        
+# TTTButton
 extends TextureButton
 class_name TTTButton
 
