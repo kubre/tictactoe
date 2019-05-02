@@ -44,6 +44,7 @@ margin_bottom = 300.0
 margin_top = 260.0
 margin_right = 150.0
 margin_bottom = 300.0
+
 [connection signal="pressed" from="PVPButton" to="." method="_on_PVPButton_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="KubreWebsiteLink" to="." method="_on_KubreWebsiteLink_pressed"]

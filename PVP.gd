@@ -47,7 +47,12 @@ func on_position_marked(btn: TTTButton) -> void:
         msgbox("Draw", "Draw game! both played well, Click ok to reset game", "reset")
 
     # Switch active player
-    active_player = O if active_player == X else X
+    if active_player == X:
+        active_player = O
+        $PlayerTurn.text = "O"
+    else:
+        active_player = X
+        $PlayerTurn.text = "X"
 
 func place_mark(btn: TTTButton, player: int) -> bool:
     # Actullay places marks board
